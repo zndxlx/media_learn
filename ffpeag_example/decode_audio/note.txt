@@ -1,0 +1,11 @@
+将解码器设置为了AAC方便测试
+
+测试命令
+.\test.exe ..\assets\demo.aac b.pcm
+
+播放时候设置采用48000, 32bit 立体声 小端
+ffplay -ar 48000 -channels 2 -f s32le b.pcm
+这样播放噪音很大，问题需要解决
+
+原来aac解码后的pcm格式是float格式的使用下面命令就没有杂音了
+ffplay -ar 48000 -channels 2 -f f32le b.pcm

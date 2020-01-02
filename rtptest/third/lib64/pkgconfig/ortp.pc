@@ -1,0 +1,10 @@
+# This is a comment
+prefix=/usr
+exec_prefix=/usr/bin
+includedir=/usr/include
+
+Name: oRTP 
+Description: Implement the RFC3550 (RTP) with a easy to use API with high and low level access.
+Version: 1.0.2
+Libs: -L/usr/lib -lortp 
+Cflags: -I/usr/include 

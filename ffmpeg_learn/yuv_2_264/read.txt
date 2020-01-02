@@ -1,0 +1,19 @@
+还是使用的老接口
+
+#测试yuv文件下载地址, 用yuv_player看是300帧画面
+ftp://ftp.tnt.uni-hannover.de/pub/svc/testsequences/CITY_352x288_30_orig_01_yuv.zip
+
+
+#可以参考博客
+http://blog.51cto.com/990487026/1974942
+https://blog.csdn.net/hsq1596753614/article/details/82025150
+
+#将一段mp4提取yuv数据
+#ss 5 提取视频开始时间
+#-t 20  提取视频时长
+#-pix_fmt yuv420p  指定yuv为yuv420p格式
+#-s 1280x720   指定编码分辨率
+ffmpeg -ss 5 -t 20 -i input.mp4 -s 1280x720 -pix_fmt yuv420p 1280x720_yuv420p.yuv
+
+
+

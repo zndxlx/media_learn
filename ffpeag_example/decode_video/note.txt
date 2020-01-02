@@ -1,0 +1,13 @@
+
+为了测试把avcodec_find_decoder参数改为了AV_CODEC_ID_H264
+
+测试命令
+.\test.exe ..\assets\a.h264  yyy
+
+会生成一系列的图片，这些图片是pgm格式的，可以用ffplay查看 
+ 
+查看命令
+ffplay  yyy-1
+
+
+

@@ -1,0 +1,7 @@
+
+
+
+输入命令  .\test.exe  a.h264  libx264
+
+播放h264  ffplay ./a.h264
+

@@ -1,0 +1,10 @@
+老师github地址
+
+https://github.com/yinwenjie/FFmpeg_Tutorial
+
+
+
+以前是linux工程，需要调整为windows工程
+
+
+

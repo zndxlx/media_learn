@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "avformat.h": "c",
+        "avcodec.h": "c",
+        "dict.h": "c"
+    }
+}

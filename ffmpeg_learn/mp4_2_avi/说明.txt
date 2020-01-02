@@ -1,0 +1,6 @@
+
+1、MP4转avi提示错误 H.264 bitstream malformed, no startcode found, use the video bitstream filte
+
+https://blog.csdn.net/IOT_SHUN/article/details/79739366
+
+https://blog.csdn.net/IOT_SHUN/article/details/79739366
