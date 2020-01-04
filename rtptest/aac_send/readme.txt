@@ -8,7 +8,7 @@ https://www.cnblogs.com/djw316/p/10975372.html
 ffplay -protocol_whitelist "file,rtp,udp" a.sdp
 
 
-怎么打包可以参考ffmpeg rtpenc_aac.c  gstream good plugin 中 gst_rtp_mp4g_pay_flush
+怎么打包可以参考ffmpeg rtpenc_aac.c 
 
 
 1、需要去掉adts头，

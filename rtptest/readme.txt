@@ -1,4 +1,4 @@
-ortp安装
+一、ortp安装
 https://blog.csdn.net/wang3141128/article/details/80481111?utm_source=blogxgwz1
 1、cmake3安装
 https://www.cnblogs.com/chenjunwu/p/11730460.html
@@ -27,5 +27,30 @@ ffplay.exe  demo.alaw -f alaw -ar 8000
 
 播放rtp码流
 ffplay.exe  -protocol_whitelist "file,rtp,udp" ./a.sdp
+
+
+二、 mediastream安装
+1、下载版本 mediastreamer-2.16.1
+2、yum install libv4l  
+   yum install libv4l-devel
+   yum install libX11-devel
+   参考 https://www.linuxidc.com/Linux/2018-10/154934.htm 安装ffmpeg和ffmpeg-libs
+3、cmake3  -DENABLE_SPEEX_CODEC=NO -DENABLE_SPEEX_DSP=NO -DENABLE_FFMPEG=NO -DENABLE_V4L=0 -DENABLE_SOUND=NO -DENABLE_DEBUG_LOGS=YES -DENABLE_UNIT_TESTS=NO . 
+
+cmake3  -DENABLE_SPEEX_CODEC=NO -DENABLE_SPEEX_DSP=NO  -DENABLE_SOUND=NO -DENABLE_DEBUG_LOGS=YES -DENABLE_UNIT_TESTS=NO . -DENABLE_V4L=0
+
+cmake3  -DENABLE_SPEEX_CODEC=NO -DENABLE_SPEEX_DSP=NO -DENABLE_SOUND=NO -DENABLE_DEBUG_LOGS=YES -DENABLE_UNIT_TESTS=NO . 
+
+cmake3  -DENABLE_SPEEX_CODEC=NO -DENABLE_SPEEX_DSP=NO -DENABLE_SOUND=NO -DENABLE_DEBUG_LOGS=YES -DENABLE_UNIT_TESTS=NO . 
+
+make 
+提示错误 
+注释掉提示行 mediastreamer-2.16.1/src/base/msfactory.c
+make install
+
+
+
+
+
 
 
