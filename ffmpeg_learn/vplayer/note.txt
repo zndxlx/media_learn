@@ -1,0 +1,4 @@
+
+
+1、打开文件写入文件记得使用二进制打开
+FILE *fOut = fopen(outputFileName, "wb");
